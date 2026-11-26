@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<p>Enter a movie number (1 and 2 exists in database) and click the button:</p>
+
+<form action="/" method="get">
+    <!-- Basic movie search button -->
+    <input type="number" name="movieId" required>
+    <button type="submit">Check Movie</button>
+</form>
+
+<!-- Results after "Check Movie" button was pressed -->
+<div th:if="${searched}">
+    <!-- If movie exists in database -->
+    <div th:if="${exists}"
+         style="margin-top: 15px;
+                padding: 15px;
+                border: 1px solid black;
+                background-color: #E8F5E9;">
+        <p th:text="${message}"></p>
+    </div>
+
+    <!-- If movie doesn't exist in database -->
+    <div th:unless="${exists}"
+         style="margin-top: 15px;
+                padding: 15px;
+                border: 1px solid black;
+                background-color: #FFCCCC;">
+        <p th:text="${message}"></p>
+    </div>
+</div>
+</body>
+</html>
