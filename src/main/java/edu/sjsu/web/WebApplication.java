@@ -9,7 +9,6 @@ public class WebApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(WebApplication.class, args);
 	}
-
 	// Type the following to run:
 	// http://localhost:8080/
 }
