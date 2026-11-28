@@ -7,10 +7,12 @@ Prerequisites:
 
 Installation Instructions (Tested for Windows but not Mac):
 
-1. Clone repository into your preferred IDE (Intellij and VSCode works)
+1. Clone repository into your preferred IDE
 2. Launch MySQL Workbench and execute `user_initialize.sql`
-3A. If using an IDE that has an integrated run button, simply run `WebApplication.java`
-3B. Otherwise, run the following command in the terminal:
+   
+&nbsp;&nbsp;&nbsp;3A. If using an IDE that has an integrated run button, simply run `WebApplication.java` (Like IntelliJ or VSCode)
+
+&nbsp;&nbsp;&nbsp;3B. Otherwise, run the following command in the terminal:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Windows: `.\mvnw.cmd spring-boot:run`
 
